@@ -1,0 +1,20 @@
+{
+    "title": "More than one key in GT",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99,
+                "courses_pass": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

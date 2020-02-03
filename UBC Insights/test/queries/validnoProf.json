@@ -1,0 +1,17 @@
+{
+    "title": "get all cpsc courses",
+    "query": {
+        "WHERE":{
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "oneNoProf_instructor",
+                "oneNoProf_avg"
+            ],
+            "ORDER": "oneNoProf_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

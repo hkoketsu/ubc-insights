@@ -1,0 +1,16 @@
+{
+    "title": "zip file with sections with one that have no title",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "oneEmptyString_title",
+                "oneEmptyString_id"
+            ],
+            "ORDER": "oneEmptyString_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

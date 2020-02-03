@@ -1,0 +1,78 @@
+{
+    "title": "Valid IS operator second half",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_title": "*rit"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_uuid": "*3"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "b*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid",
+                "courses_avg",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_uuid": "95163",
+            "courses_avg": 68.12,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "brocklebank, lisa"
+        },
+        {
+            "courses_uuid": "48323",
+            "courses_avg": 68.71,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "brocklebank, lisa"
+        },
+        {
+            "courses_uuid": "48363",
+            "courses_avg": 68.78,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "baxter, gisele marie"
+        },
+        {
+            "courses_uuid": "57093",
+            "courses_avg": 70.48,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "birks, roberta"
+        },
+        {
+            "courses_uuid": "57083",
+            "courses_avg": 71.05,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "bose, sarika"
+        },
+        {
+            "courses_uuid": "95173",
+            "courses_avg": 72.55,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "baxter, gisele marie"
+        },
+        {
+            "courses_uuid": "57053",
+            "courses_avg": 74.52,
+            "courses_title": "strat univ writ",
+            "courses_instructor": "baxter, gisele marie"
+        }
+    ]
+}

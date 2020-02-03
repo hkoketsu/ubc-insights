@@ -1,0 +1,19 @@
+{
+    "title": "Valid big courses avg",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 9999999999999991919199199191919191191919191919919191919919931929391299999999.9999999999
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

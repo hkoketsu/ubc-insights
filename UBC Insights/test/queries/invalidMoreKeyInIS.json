@@ -1,0 +1,30 @@
+{
+    "title": "More than one key in IS",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "*psc*",
+                        "courses_id" : "3*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_id"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

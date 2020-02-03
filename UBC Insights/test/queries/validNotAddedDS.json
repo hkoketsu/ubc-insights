@@ -1,0 +1,19 @@
+{
+    "title": "valid query but invalid dataset (not added)",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS":[
+                "noData_dept",
+                "noData_avg"
+            ],
+            "ORDER": "noData_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

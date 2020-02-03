@@ -1,0 +1,21 @@
+{
+    "title": "More than one key in EQ",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 99,
+                "courses_pass": 0,
+                "courses_fail": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

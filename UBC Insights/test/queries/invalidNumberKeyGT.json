@@ -1,0 +1,19 @@
+{
+    "title": "Invalid number key type in GT",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "9" : "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

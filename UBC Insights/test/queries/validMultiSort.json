@@ -1,0 +1,49 @@
+{
+    "title": "valid multi sort",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_number",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_shortname",
+                    "maxSeats"
+
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"ANGU","rooms_number":"098","maxSeats":260},{"rooms_shortname":"BUCH","rooms_number":"A202","maxSeats":108},{"rooms_shortname":"BUCH","rooms_number":"A203","maxSeats":108},{"rooms_shortname":"CHBE","rooms_number":"101","maxSeats":200},{"rooms_shortname":"DMP","rooms_number":"110","maxSeats":120},{"rooms_shortname":"DMP","rooms_number":"310","maxSeats":160},{"rooms_shortname":"FRDM","rooms_number":"153","maxSeats":160},{"rooms_shortname":"HEBB","rooms_number":"100","maxSeats":375},{"rooms_shortname":"IBLC","rooms_number":"261","maxSeats":112},{"rooms_shortname":"IBLC","rooms_number":"182","maxSeats":154},{"rooms_shortname":"LSC","rooms_number":"1003","maxSeats":125},{"rooms_shortname":"LSC","rooms_number":"1001","maxSeats":350},{"rooms_shortname":"LSC","rooms_number":"1002","maxSeats":350},{"rooms_shortname":"LSK","rooms_number":"201","maxSeats":183},{"rooms_shortname":"LSK","rooms_number":"200","maxSeats":205},{"rooms_shortname":"MCLD","rooms_number":"202","maxSeats":123},{"rooms_shortname":"MCLD","rooms_number":"228","maxSeats":136},{"rooms_shortname":"OSBO","rooms_number":"A","maxSeats":442},{"rooms_shortname":"PHRM","rooms_number":"1201","maxSeats":167},{"rooms_shortname":"PHRM","rooms_number":"1101","maxSeats":236},{"rooms_shortname":"SRC","rooms_number":"220A","maxSeats":299},{"rooms_shortname":"SRC","rooms_number":"220B","maxSeats":299},{"rooms_shortname":"SRC","rooms_number":"220C","maxSeats":299},{"rooms_shortname":"SWNG","rooms_number":"121","maxSeats":187},{"rooms_shortname":"SWNG","rooms_number":"122","maxSeats":188},{"rooms_shortname":"SWNG","rooms_number":"221","maxSeats":190},{"rooms_shortname":"SWNG","rooms_number":"222","maxSeats":190},{"rooms_shortname":"WOOD","rooms_number":"1","maxSeats":120},{"rooms_shortname":"WOOD","rooms_number":"4","maxSeats":120},{"rooms_shortname":"WOOD","rooms_number":"5","maxSeats":120}]
+}

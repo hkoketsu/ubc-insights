@@ -1,0 +1,89 @@
+{
+    "title": "Valid GT operator all keys",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_pass": 3
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_fail": 3
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_audit": 3
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_year": 2010
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid",
+                "courses_avg",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_uuid": "90960",
+            "courses_avg": 67.26,
+            "courses_title": "money & banking",
+            "courses_instructor": "newman, geoffrey"
+        },
+        {
+            "courses_uuid": "17473",
+            "courses_avg": 67.66,
+            "courses_title": "immunology",
+            "courses_instructor": "kion, tracy"
+        },
+        {
+            "courses_uuid": "709",
+            "courses_avg": 71.13,
+            "courses_title": "int quan dec mak",
+            "courses_instructor": "graham, brian"
+        },
+        {
+            "courses_uuid": "11531",
+            "courses_avg": 71.28,
+            "courses_title": "b-c anly&proj ev",
+            "courses_instructor": "chapple, clive"
+        },
+        {
+            "courses_uuid": "74381",
+            "courses_avg": 73.12,
+            "courses_title": "intro int trade",
+            "courses_instructor": "bombardini, matilde"
+        },
+        {
+            "courses_uuid": "21947",
+            "courses_avg": 76.09,
+            "courses_title": "microeconomics",
+            "courses_instructor": "shrestha, ratna"
+        },
+        {
+            "courses_uuid": "46028",
+            "courses_avg": 76.23,
+            "courses_title": "circltn & plnktn",
+            "courses_instructor": "lipsen, michael;maldonado-pareja, maria;orians, kristin"
+        },
+        {
+            "courses_uuid": "12375",
+            "courses_avg": 76.83,
+            "courses_title": "immunology",
+            "courses_instructor": "johnson, pauline;kion, tracy"
+        }
+    ]
+}

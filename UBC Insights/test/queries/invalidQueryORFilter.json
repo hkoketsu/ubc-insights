@@ -1,0 +1,21 @@
+{
+    "title": "Invalid query with wrong OR filter",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "courses_dept": "cpsc"
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

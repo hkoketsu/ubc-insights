@@ -1,0 +1,18 @@
+{
+    "queryCourseSimple": "simple query IS comparison for department with two columns and old order syntax",
+    "queryCourseOpAnd": "course query with AND operator and all operator conditions",
+    "queryCourseOpOr": "course query with OR operator and all operator conditions",
+    "queryCourseOpNone": "course query with none of the following conditions",
+    "queryCourseCondNone": "course query with no condition",
+    "queryCourseColumnNone": "course query with no column",
+    "queryCourseColumnOne": "course query with one column",
+    "queryCourseColumnAll": "course query with all columns with no order",
+    "queryCourseOrderOne": "course query with one up order",
+    "queryCourseOrderOneDown": "course query with one down order",
+    "queryCourseOrderAll": "course query with multiple up order",
+    "queryCourseOrderAllDown": "course query with multiple up order with no group",
+    "queryCourseGroupOne": "course query with one group with no apply",
+    "queryCourseGroupSome": "course query with two groups with no apply",
+    "queryCourseApplyOne": "course query with one transformation apply",
+    "queryCourseApplyAll": "course query with all transformations apply"
+}

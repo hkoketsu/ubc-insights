@@ -1,0 +1,53 @@
+{
+    "title": "Random Mcomperator with empty result",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 89
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_avg": 91
+                            }
+                        },
+                        {
+                            "EQ": {
+                                "courses_avg": 100
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

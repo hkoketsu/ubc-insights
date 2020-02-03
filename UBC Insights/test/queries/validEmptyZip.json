@@ -1,0 +1,19 @@
+{
+    "title": "Invalid dataset (no data)",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS":[
+                "nonZip_dept",
+                "nonZip_avg"
+            ],
+            "ORDER": "nonZip_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

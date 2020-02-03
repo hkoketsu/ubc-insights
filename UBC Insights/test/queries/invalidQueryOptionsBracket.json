@@ -1,0 +1,20 @@
+{
+    "title": "Invalid Simple query wrong WHERE",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_year": 2015
+            }
+        },
+        "OPTIONS": [{
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }]
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

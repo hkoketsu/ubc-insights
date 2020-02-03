@@ -1,0 +1,16 @@
+{
+    "title": "Invalid Simple query referencing multiple datasets",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "oneCourse_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

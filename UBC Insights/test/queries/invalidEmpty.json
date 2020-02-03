@@ -1,0 +1,6 @@
+{
+    "title": "Invlid empty query",
+    "query": {},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

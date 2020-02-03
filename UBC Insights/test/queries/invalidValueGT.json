@@ -1,0 +1,28 @@
+{
+    "title": "Invalid value type in GT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": "9*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adh*e"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

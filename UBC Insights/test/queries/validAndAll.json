@@ -1,0 +1,43 @@
+{
+    "title": "Valid AND operator all keys",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_pass": 3
+                    }
+                },
+                {
+                    "AND": [
+                        {
+                            "EQ": {
+                                "courses_pass": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "OR": [
+                        {
+                            "LT": {
+                                "courses_pass": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_fail",
+                "courses_year",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

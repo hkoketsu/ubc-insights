@@ -1,0 +1,71 @@
+{
+    "title": "Valid GT operator all keys",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_pass": 1
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_fail": 3
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_audit": 3
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_year": 2010
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid",
+                "courses_avg",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_uuid": "89536",
+            "courses_avg": 0,
+            "courses_title": "forest ecology",
+            "courses_instructor": ""
+        },
+        {
+            "courses_uuid": "56402",
+            "courses_avg": 0,
+            "courses_title": "in land food com",
+            "courses_instructor": ""
+        },
+        {
+            "courses_uuid": "56403",
+            "courses_avg": 0,
+            "courses_title": "in land food com",
+            "courses_instructor": ""
+        },
+        {
+            "courses_uuid": "49835",
+            "courses_avg": 1,
+            "courses_title": "prpty,ident&uses",
+            "courses_instructor": ""
+        },
+        {
+            "courses_uuid": "16428",
+            "courses_avg": 4,
+            "courses_title": "found re apprai",
+            "courses_instructor": ""
+        }
+    ]
+}

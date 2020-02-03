@@ -1,0 +1,92 @@
+{
+    "title": "Invalid value type in Not",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "NOT": {
+                        "EQ": {
+                            "courses_avg": 90
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "LT": {
+                            "courses_pass": 90
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "GT": {
+                            "courses_fail": 90
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_dept": "*"
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_dept": "*"
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "NOT": {
+                            "IS": {
+                                "courses_dept": "*"
+                            }
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "AND": [
+                            {
+                                "IS": {
+                                    "courses_dept": "*"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "NOT": {
+                        "OR": [
+                            {
+                                "IS": {
+                                    "courses_dept": "*"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}
